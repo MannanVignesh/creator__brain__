@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Override default Inter with Outfit for a more premium look if needed, 
+   but Inter is great too. Let's keep Inter but refine tokens. */
+
+:root {
+    --cb-purple: #7C3AED;
+    --cb-cyan: #06B6D4;
+    --cb-amber: #F59E0B;
+    --cb-bg: #0A0A0F;
+}
+
+/* Custom scrollbar for webkit */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(124, 58, 237, 0.2);
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(124, 58, 237, 0.5);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* Pulse animation for active navigation */
+@keyframes pulse-nav {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform: scale(0.95);
+    }
+}
+
+.animate-pulse-slow {
+    animation: pulse-nav 3s infinite ease-in-out;
+}
+
+/* Chart container styles */
+.recharts-responsive-container {
+    font-family: inherit;
+}

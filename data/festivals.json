@@ -1,0 +1,282 @@
+[
+    {
+        "name": "Makar Sankranti",
+        "date": "2025-01-14",
+        "languages": [
+            "Hindi",
+            "Telugu",
+            "Tamil",
+            "Marathi"
+        ],
+        "content_opportunity": "Kite flying content, traditional sweets recipes, festive outfit showcases",
+        "hashtags": [
+            "#MakarSankranti",
+            "#Uttarayan",
+            "#Pongal",
+            "#FestiveSeason"
+        ]
+    },
+    {
+        "name": "Republic Day",
+        "date": "2025-01-26",
+        "languages": [
+            "Hindi",
+            "Tamil",
+            "Telugu",
+            "Marathi",
+            "Bengali"
+        ],
+        "content_opportunity": "Patriotic themed content, tricolor outfit reveals, Indian history facts",
+        "hashtags": [
+            "#RepublicDay",
+            "#JaiHind",
+            "#RepublicDay2025",
+            "#ProudIndian"
+        ]
+    },
+    {
+        "name": "Valentine's Day",
+        "date": "2025-02-14",
+        "languages": [
+            "Hindi",
+            "Tamil",
+            "Telugu",
+            "Marathi",
+            "Bengali"
+        ],
+        "content_opportunity": "Gift ideas, couple content, love-themed products or songs",
+        "hashtags": [
+            "#ValentinesDay",
+            "#PyaarKaIzhar",
+            "#GiftIdeas",
+            "#LoveIs"
+        ]
+    },
+    {
+        "name": "Holi",
+        "date": "2025-03-14",
+        "languages": [
+            "Hindi",
+            "Marathi",
+            "Bengali"
+        ],
+        "content_opportunity": "Color burst reels, Holi fashion, traditional recipes like gujiya, festive makeup",
+        "hashtags": [
+            "#Holi2025",
+            "#HoliHai",
+            "#RangBarse",
+            "#FestivalOfColors"
+        ]
+    },
+    {
+        "name": "Gudi Padwa",
+        "date": "2025-03-30",
+        "languages": [
+            "Marathi"
+        ],
+        "content_opportunity": "New year celebration, traditional Maharashtrian dishes, saree styling",
+        "hashtags": [
+            "#GudiPadwa",
+            "#MarathiNavVarsh",
+            "#GudiPadwa2025"
+        ]
+    },
+    {
+        "name": "Ram Navami",
+        "date": "2025-04-06",
+        "languages": [
+            "Hindi",
+            "Telugu"
+        ],
+        "content_opportunity": "Devotional content, temple visits, traditional sweets",
+        "hashtags": [
+            "#RamNavami",
+            "#JaiShriRam",
+            "#RamNavami2025"
+        ]
+    },
+    {
+        "name": "Eid ul-Fitr",
+        "date": "2025-03-31",
+        "languages": [
+            "Hindi",
+            "Bengali"
+        ],
+        "content_opportunity": "Eid fashion, seviyan recipes, celebration content, gratitude posts",
+        "hashtags": [
+            "#EidMubarak",
+            "#Eid2025",
+            "#EidFashion",
+            "#EidSpecial"
+        ]
+    },
+    {
+        "name": "Mother's Day",
+        "date": "2025-05-11",
+        "languages": [
+            "Hindi",
+            "Tamil",
+            "Telugu",
+            "Marathi",
+            "Bengali"
+        ],
+        "content_opportunity": "Tribute reels to mom, gift ideas, emotional storytelling, mom-daughter content",
+        "hashtags": [
+            "#MothersDay",
+            "#MaaKaPyaar",
+            "#MothersDay2025",
+            "#MomLife"
+        ]
+    },
+    {
+        "name": "Independence Day",
+        "date": "2025-08-15",
+        "languages": [
+            "Hindi",
+            "Tamil",
+            "Telugu",
+            "Marathi",
+            "Bengali"
+        ],
+        "content_opportunity": "Patriotic outfit reveals, freedom-themed content, tricolor creations",
+        "hashtags": [
+            "#IndependenceDay",
+            "#JaiHind",
+            "#HarGharTiranga",
+            "#ProudIndian"
+        ]
+    },
+    {
+        "name": "Janmashtami",
+        "date": "2025-08-16",
+        "languages": [
+            "Hindi",
+            "Marathi"
+        ],
+        "content_opportunity": "Dahi handi content, Krishna-themed decoration, festive dress-up reels",
+        "hashtags": [
+            "#Janmashtami",
+            "#JaiShriKrishna",
+            "#Janmashtami2025",
+            "#DahiHandi"
+        ]
+    },
+    {
+        "name": "Ganesh Chaturthi",
+        "date": "2025-08-27",
+        "languages": [
+            "Marathi",
+            "Telugu",
+            "Hindi"
+        ],
+        "content_opportunity": "Modak recipes, idol decoration, aarti reels, festive fashion",
+        "hashtags": [
+            "#GaneshChaturthi",
+            "#GanpatiiBappaMorya",
+            "#GaneshFestival",
+            "#Modak"
+        ]
+    },
+    {
+        "name": "Navratri",
+        "date": "2025-10-02",
+        "languages": [
+            "Hindi",
+            "Gujarati",
+            "Marathi"
+        ],
+        "content_opportunity": "Garba dance reels, festive outfit showcases, dandiya content",
+        "hashtags": [
+            "#Navratri",
+            "#Navratri2025",
+            "#Garba",
+            "#NavratriOutfit"
+        ]
+    },
+    {
+        "name": "Dussehra",
+        "date": "2025-10-02",
+        "languages": [
+            "Hindi",
+            "Telugu",
+            "Marathi"
+        ],
+        "content_opportunity": "Ravan dahan reactions, good vs evil messaging, festive food",
+        "hashtags": [
+            "#Dussehra",
+            "#Vijayadashami",
+            "#Dussehra2025",
+            "#GoodOverEvil"
+        ]
+    },
+    {
+        "name": "Diwali",
+        "date": "2025-10-20",
+        "languages": [
+            "Hindi",
+            "Tamil",
+            "Telugu",
+            "Marathi",
+            "Bengali"
+        ],
+        "content_opportunity": "Diyas and decor, festive fashion, family celebration reels, sweets, fireworks (safety)",
+        "hashtags": [
+            "#Diwali2025",
+            "#HappyDiwali",
+            "#DiwaliVibes",
+            "#FestivalOfLights"
+        ]
+    },
+    {
+        "name": "Bhai Dooj",
+        "date": "2025-10-23",
+        "languages": [
+            "Hindi",
+            "Marathi",
+            "Bengali"
+        ],
+        "content_opportunity": "Sibling bond content, gifting ideas, emotional tribute reels",
+        "hashtags": [
+            "#BhaiDooj",
+            "#BhaiDooj2025",
+            "#SiblingLove",
+            "#BrotherSister"
+        ]
+    },
+    {
+        "name": "Christmas",
+        "date": "2025-12-25",
+        "languages": [
+            "Hindi",
+            "Tamil",
+            "Telugu",
+            "Marathi",
+            "Bengali"
+        ],
+        "content_opportunity": "Christmas decoration, gifting content, winter aesthetic, carol reels",
+        "hashtags": [
+            "#Christmas2025",
+            "#MerryChristmas",
+            "#ChristmasVibes",
+            "#Xmas"
+        ]
+    },
+    {
+        "name": "New Year's Eve",
+        "date": "2025-12-31",
+        "languages": [
+            "Hindi",
+            "Tamil",
+            "Telugu",
+            "Marathi",
+            "Bengali"
+        ],
+        "content_opportunity": "Year in review, resolutions, countdown reels, party outfit reveals",
+        "hashtags": [
+            "#NewYear2026",
+            "#HappyNewYear",
+            "#Goodbye2025",
+            "#NewYearVibes"
+        ]
+    }
+]

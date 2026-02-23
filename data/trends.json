@@ -1,0 +1,1032 @@
+{
+    "music": [
+        {
+            "id": "music_1",
+            "name": "Emotional acoustic covers",
+            "niche": "music",
+            "popularity_score": 92,
+            "weekly_growth": "+34% this week",
+            "format_type": "Reel",
+            "example_caption_style": "That one song that hits different at 2am... 🌙 #acoustic #coversong",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "music_2",
+            "name": "15-sec melody transitions",
+            "niche": "music",
+            "popularity_score": 88,
+            "weekly_growth": "+28% this week",
+            "format_type": "Reel",
+            "example_caption_style": "From __ to __ in 15 seconds 🎵 Which version is your fav?",
+            "ideal_duration": "0-15s"
+        },
+        {
+            "id": "music_3",
+            "name": "Behind the song: raw process",
+            "niche": "music",
+            "popularity_score": 85,
+            "weekly_growth": "+22% this week",
+            "format_type": "Reel",
+            "example_caption_style": "No one talks about what it feels like to write a song at 3am. Here's mine 👇",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "music_4",
+            "name": "Genre mashup challenge",
+            "niche": "music",
+            "popularity_score": 81,
+            "weekly_growth": "+19% this week",
+            "format_type": "Reel",
+            "example_caption_style": "What happens when you mix __ with __? This 🔥",
+            "ideal_duration": "15-30s"
+        },
+        {
+            "id": "music_5",
+            "name": "Comment decides my next song",
+            "niche": "music",
+            "popularity_score": 79,
+            "weekly_growth": "+17% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Top comment decides what I cover next. GO 👇",
+            "ideal_duration": "0-15s"
+        },
+        {
+            "id": "music_6",
+            "name": "Music theory simplified in 30s",
+            "niche": "music",
+            "popularity_score": 77,
+            "weekly_growth": "+15% this week",
+            "format_type": "Reel",
+            "example_caption_style": "This music hack changed everything for me 🎶 Save this!",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "music_7",
+            "name": "Studio setup reveal",
+            "niche": "music",
+            "popularity_score": 74,
+            "weekly_growth": "+12% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "My entire home studio setup for under ₹20,000 🎙️ Swipe to see each piece →",
+            "ideal_duration": "N/A"
+        },
+        {
+            "id": "music_8",
+            "name": "Duet with fan submission",
+            "niche": "music",
+            "popularity_score": 72,
+            "weekly_growth": "+11% this week",
+            "format_type": "Reel",
+            "example_caption_style": "A fan sent me this and I had to collab 🥹 @username you're incredible",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "music_9",
+            "name": "Before/after production comparison",
+            "niche": "music",
+            "popularity_score": 69,
+            "weekly_growth": "+9% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Raw vs produced — same song, totally different feel. Which do you prefer?",
+            "ideal_duration": "15-30s"
+        },
+        {
+            "id": "music_10",
+            "name": "Artist reaction to trending audio",
+            "niche": "music",
+            "popularity_score": 65,
+            "weekly_growth": "+7% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Everyone's using this audio rn so I had to put my twist on it 🎵",
+            "ideal_duration": "15-30s"
+        }
+    ],
+    "education": [
+        {
+            "id": "edu_1",
+            "name": "Concept explained in 60 seconds",
+            "niche": "education",
+            "popularity_score": 94,
+            "weekly_growth": "+38% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Your teacher never explained __ this way 🤯 Save this for exams!",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "edu_2",
+            "name": "Study with me ASMR",
+            "niche": "education",
+            "popularity_score": 89,
+            "weekly_growth": "+31% this week",
+            "format_type": "Reel",
+            "example_caption_style": "2-hour study session compressed into 60 seconds. Let's go 📚",
+            "ideal_duration": "60s+"
+        },
+        {
+            "id": "edu_3",
+            "name": "Exam hack carousel",
+            "niche": "education",
+            "popularity_score": 86,
+            "weekly_growth": "+25% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "7 tricks to score 95+ that no coaching tells you → Swipe now 👆",
+            "ideal_duration": "N/A"
+        },
+        {
+            "id": "edu_4",
+            "name": "Common mistake correction",
+            "niche": "education",
+            "popularity_score": 82,
+            "weekly_growth": "+21% this week",
+            "format_type": "Reel",
+            "example_caption_style": "95% of students get this wrong. Are you one of them? 👀",
+            "ideal_duration": "15-30s"
+        },
+        {
+            "id": "edu_5",
+            "name": "Day in the life of a topper",
+            "niche": "education",
+            "popularity_score": 79,
+            "weekly_growth": "+18% this week",
+            "format_type": "Reel",
+            "example_caption_style": "I studied 8 hours today. Here's what that actually looked like 📖",
+            "ideal_duration": "60s+"
+        },
+        {
+            "id": "edu_6",
+            "name": "Formula/mnemonic reveal",
+            "niche": "education",
+            "popularity_score": 76,
+            "weekly_growth": "+14% this week",
+            "format_type": "Reel",
+            "example_caption_style": "This 5-letter trick will make you never forget __ again 🧠",
+            "ideal_duration": "0-15s"
+        },
+        {
+            "id": "edu_7",
+            "name": "Question answer challenge",
+            "niche": "education",
+            "popularity_score": 73,
+            "weekly_growth": "+11% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Can you answer this in 10 seconds? 90% can't 🤔 Comment your answer!",
+            "ideal_duration": "0-15s"
+        },
+        {
+            "id": "edu_8",
+            "name": "Resource roundup carousel",
+            "niche": "education",
+            "popularity_score": 70,
+            "weekly_growth": "+9% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "10 free resources that helped me crack __ → Save this before it disappears",
+            "ideal_duration": "N/A"
+        },
+        {
+            "id": "edu_9",
+            "name": "Motivation + study tip combo",
+            "niche": "education",
+            "popularity_score": 67,
+            "weekly_growth": "+7% this week",
+            "format_type": "Reel",
+            "example_caption_style": "For every student who wants to give up right now 💙",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "edu_10",
+            "name": "Live doubt solving session highlights",
+            "niche": "education",
+            "popularity_score": 63,
+            "weekly_growth": "+5% this week",
+            "format_type": "Reel",
+            "example_caption_style": "This question from yesterday's session broke everyone's brain 🧠 Let me solve it",
+            "ideal_duration": "60s+"
+        }
+    ],
+    "fitness": [
+        {
+            "id": "fit_1",
+            "name": "5-minute morning routine",
+            "niche": "fitness",
+            "popularity_score": 95,
+            "weekly_growth": "+41% this week",
+            "format_type": "Reel",
+            "example_caption_style": "5 minutes every morning. 30 days. This is what happened to my body 💪",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "fit_2",
+            "name": "No-equipment home workout",
+            "niche": "fitness",
+            "popularity_score": 91,
+            "weekly_growth": "+35% this week",
+            "format_type": "Reel",
+            "example_caption_style": "No gym? No problem. Save this full-body workout 🏠",
+            "ideal_duration": "60s+"
+        },
+        {
+            "id": "fit_3",
+            "name": "Transformation before/after",
+            "niche": "fitness",
+            "popularity_score": 88,
+            "weekly_growth": "+29% this week",
+            "format_type": "Reel",
+            "example_caption_style": "6 months. Same person. Completely different mindset. Here's how 👇",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "fit_4",
+            "name": "Fitness myth busting",
+            "niche": "fitness",
+            "popularity_score": 84,
+            "weekly_growth": "+23% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "5 fitness myths that are keeping you from your goals → Swipe to unlearn them",
+            "ideal_duration": "N/A"
+        },
+        {
+            "id": "fit_5",
+            "name": "What I eat in a day",
+            "niche": "fitness",
+            "popularity_score": 81,
+            "weekly_growth": "+20% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Everything I ate today while staying in a 1800 cal deficit 🥗",
+            "ideal_duration": "60s+"
+        },
+        {
+            "id": "fit_6",
+            "name": "Form check + common errors",
+            "niche": "fitness",
+            "popularity_score": 78,
+            "weekly_growth": "+16% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Most people do this exercise wrong and it ruins their spine. Here's the fix 🔑",
+            "ideal_duration": "15-30s"
+        },
+        {
+            "id": "fit_7",
+            "name": "Gym motivation transition",
+            "niche": "fitness",
+            "popularity_score": 74,
+            "weekly_growth": "+13% this week",
+            "format_type": "Reel",
+            "example_caption_style": "You won't want to skip the gym after watching this 🔥",
+            "ideal_duration": "15-30s"
+        },
+        {
+            "id": "fit_8",
+            "name": "Weekly challenge series",
+            "niche": "fitness",
+            "popularity_score": 71,
+            "weekly_growth": "+10% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Week 1 of the 30-day abs challenge. Who's joining? 👊",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "fit_9",
+            "name": "Protein meal prep guide",
+            "niche": "fitness",
+            "popularity_score": 68,
+            "weekly_growth": "+8% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "My entire week of high-protein meals prepped in 2 hours → Save this 🥡",
+            "ideal_duration": "N/A"
+        },
+        {
+            "id": "fit_10",
+            "name": "Beginner gym guide",
+            "niche": "fitness",
+            "popularity_score": 64,
+            "weekly_growth": "+5% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "Your first week at the gym: exactly what to do and what to avoid 💯",
+            "ideal_duration": "N/A"
+        }
+    ],
+    "food": [
+        {
+            "id": "food_1",
+            "name": "5-ingredient recipe under 15 mins",
+            "niche": "food",
+            "popularity_score": 96,
+            "weekly_growth": "+43% this week",
+            "format_type": "Reel",
+            "example_caption_style": "5 ingredients. 15 minutes. Restaurant quality. Save this recipe 🍽️",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "food_2",
+            "name": "Street food recreation at home",
+            "niche": "food",
+            "popularity_score": 92,
+            "weekly_growth": "+37% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Made __ at home and it tastes BETTER than the original 😤",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "food_3",
+            "name": "Aesthetic meal plating",
+            "niche": "food",
+            "popularity_score": 87,
+            "weekly_growth": "+28% this week",
+            "format_type": "Reel",
+            "example_caption_style": "When food looks this good it tastes better too. Swipe to try it 🌸",
+            "ideal_duration": "15-30s"
+        },
+        {
+            "id": "food_4",
+            "name": "Budget gourmet challenge",
+            "niche": "food",
+            "popularity_score": 83,
+            "weekly_growth": "+22% this week",
+            "format_type": "Reel",
+            "example_caption_style": "₹100 budget. 3-course meal. Challenge accepted 👨‍🍳",
+            "ideal_duration": "60s+"
+        },
+        {
+            "id": "food_5",
+            "name": "Cooking hack nobody taught you",
+            "niche": "food",
+            "popularity_score": 80,
+            "weekly_growth": "+18% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "8 kitchen hacks I wish I knew at 18 → Save before you forget 🔪",
+            "ideal_duration": "N/A"
+        },
+        {
+            "id": "food_6",
+            "name": "Regional dish spotlight",
+            "niche": "food",
+            "popularity_score": 77,
+            "weekly_growth": "+15% this week",
+            "format_type": "Reel",
+            "example_caption_style": "This dish from __ doesn't get enough love. Let me change that 🙏",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "food_7",
+            "name": "Honest restaurant review",
+            "niche": "food",
+            "popularity_score": 73,
+            "weekly_growth": "+12% this week",
+            "format_type": "Reel",
+            "example_caption_style": "I paid ₹800 for this. Was it worth it? My honest take 🤔",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "food_8",
+            "name": "Midnight snack recipe",
+            "niche": "food",
+            "popularity_score": 70,
+            "weekly_growth": "+9% this week",
+            "format_type": "Reel",
+            "example_caption_style": "2am cravings hit different. Here's my go-to 🌙",
+            "ideal_duration": "15-30s"
+        },
+        {
+            "id": "food_9",
+            "name": "Cultural food fusion",
+            "niche": "food",
+            "popularity_score": 66,
+            "weekly_growth": "+7% this week",
+            "format_type": "Reel",
+            "example_caption_style": "What if __ met __? I tried it so you don't have to 😂",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "food_10",
+            "name": "Ingredient deep dive",
+            "niche": "food",
+            "popularity_score": 61,
+            "weekly_growth": "+4% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "Everything you didn't know about __ and how to use it → Swipe 👉",
+            "ideal_duration": "N/A"
+        }
+    ],
+    "small_business": [
+        {
+            "id": "sb_1",
+            "name": "Behind the scenes: order packing",
+            "niche": "small_business",
+            "popularity_score": 93,
+            "weekly_growth": "+36% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Packing 50 orders in one day 📦 This is what running a small business actually looks like",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "sb_2",
+            "name": "Revenue reveal / milestone",
+            "niche": "small_business",
+            "popularity_score": 90,
+            "weekly_growth": "+32% this week",
+            "format_type": "Reel",
+            "example_caption_style": "We hit ₹1L in sales this month. Here's the breakdown 📊",
+            "ideal_duration": "60s+"
+        },
+        {
+            "id": "sb_3",
+            "name": "Product launch countdown",
+            "niche": "small_business",
+            "popularity_score": 86,
+            "weekly_growth": "+26% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Dropping something new in 24 hours. Here's a sneak peek... 👀",
+            "ideal_duration": "15-30s"
+        },
+        {
+            "id": "sb_4",
+            "name": "Customer story / testimonial",
+            "niche": "small_business",
+            "popularity_score": 82,
+            "weekly_growth": "+21% this week",
+            "format_type": "Reel",
+            "example_caption_style": "This DM made my entire week 🥹 Thank you __",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "sb_5",
+            "name": "Business tips for beginners",
+            "niche": "small_business",
+            "popularity_score": 79,
+            "weekly_growth": "+17% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "What I learned in my first year of business that nobody tells you → Swipe",
+            "ideal_duration": "N/A"
+        },
+        {
+            "id": "sb_6",
+            "name": "GRWM + business owner edition",
+            "niche": "small_business",
+            "popularity_score": 75,
+            "weekly_growth": "+13% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Get ready with me for a big delivery day 🌅",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "sb_7",
+            "name": "Process video: how products are made",
+            "niche": "small_business",
+            "popularity_score": 72,
+            "weekly_growth": "+11% this week",
+            "format_type": "Reel",
+            "example_caption_style": "From raw material to your doorstep — the full process 🧵",
+            "ideal_duration": "60s+"
+        },
+        {
+            "id": "sb_8",
+            "name": "Biggest business mistake",
+            "niche": "small_business",
+            "popularity_score": 68,
+            "weekly_growth": "+8% this week",
+            "format_type": "Reel",
+            "example_caption_style": "I made this mistake and lost ₹50,000. Don't do what I did 🚫",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "sb_9",
+            "name": "Packaging design reveal",
+            "niche": "small_business",
+            "popularity_score": 65,
+            "weekly_growth": "+6% this week",
+            "format_type": "Reel",
+            "example_caption_style": "New packaging just dropped and I'm obsessed 🎁 Tell me what you think!",
+            "ideal_duration": "15-30s"
+        },
+        {
+            "id": "sb_10",
+            "name": "Supplier hunt / sourcing story",
+            "niche": "small_business",
+            "popularity_score": 61,
+            "weekly_growth": "+4% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Finding the right supplier took me 3 months. Here's how I finally did it 🔍",
+            "ideal_duration": "60s+"
+        }
+    ],
+    "lifestyle": [
+        {
+            "id": "life_1",
+            "name": "Morning routine aesthetic",
+            "niche": "lifestyle",
+            "popularity_score": 91,
+            "weekly_growth": "+33% this week",
+            "format_type": "Reel",
+            "example_caption_style": "My 6AM morning routine that changed everything ☀️",
+            "ideal_duration": "60s+"
+        },
+        {
+            "id": "life_2",
+            "name": "Room/space transformation",
+            "niche": "lifestyle",
+            "popularity_score": 87,
+            "weekly_growth": "+27% this week",
+            "format_type": "Reel",
+            "example_caption_style": "I transformed my room on a ₹3000 budget. Swipe to see the magic ✨",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "life_3",
+            "name": "Weekly reset vlog",
+            "niche": "lifestyle",
+            "popularity_score": 83,
+            "weekly_growth": "+22% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Sunday reset: cleaning, journaling, and preparing for a great week 🌿",
+            "ideal_duration": "60s+"
+        },
+        {
+            "id": "life_4",
+            "name": "Things I stopped buying",
+            "niche": "lifestyle",
+            "popularity_score": 80,
+            "weekly_growth": "+19% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "10 things I stopped buying that changed my life and saved me money → Swipe",
+            "ideal_duration": "N/A"
+        },
+        {
+            "id": "life_5",
+            "name": "Budget luxury hack",
+            "niche": "lifestyle",
+            "popularity_score": 77,
+            "weekly_growth": "+16% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Living luxuriously on a tight budget — it's actually possible 💎",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "life_6",
+            "name": "Honest life update",
+            "niche": "lifestyle",
+            "popularity_score": 74,
+            "weekly_growth": "+13% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Being honest about what's not going well right now. A real update 💬",
+            "ideal_duration": "60s+"
+        },
+        {
+            "id": "life_7",
+            "name": "Aesthetic food + productivity combo",
+            "niche": "lifestyle",
+            "popularity_score": 71,
+            "weekly_growth": "+10% this week",
+            "format_type": "Reel",
+            "example_caption_style": "The perfect productive day aesthetic 📚☕ This is my formula",
+            "ideal_duration": "60s+"
+        },
+        {
+            "id": "life_8",
+            "name": "Minimalism challenge",
+            "niche": "lifestyle",
+            "popularity_score": 68,
+            "weekly_growth": "+8% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "I got rid of 100 things in 100 days. Here's how it felt → Swipe",
+            "ideal_duration": "N/A"
+        },
+        {
+            "id": "life_9",
+            "name": "Solo travel highlights",
+            "niche": "lifestyle",
+            "popularity_score": 65,
+            "weekly_growth": "+6% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Solo trip to __ and I'll never travel any other way again 🌍",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "life_10",
+            "name": "Skincare + mental health tie-in",
+            "niche": "lifestyle",
+            "popularity_score": 62,
+            "weekly_growth": "+4% this week",
+            "format_type": "Reel",
+            "example_caption_style": "My nighttime skincare routine is also my therapy 🌙",
+            "ideal_duration": "30-60s"
+        }
+    ],
+    "comedy": [
+        {
+            "id": "com_1",
+            "name": "Relatable millennial/gen-z struggle",
+            "niche": "comedy",
+            "popularity_score": 94,
+            "weekly_growth": "+39% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Nobody talks about how __ is actually the hardest part of being an adult 😭",
+            "ideal_duration": "0-15s"
+        },
+        {
+            "id": "com_2",
+            "name": "POV sketch format",
+            "niche": "comedy",
+            "popularity_score": 90,
+            "weekly_growth": "+33% this week",
+            "format_type": "Reel",
+            "example_caption_style": "POV: You're __ and this happens 😂",
+            "ideal_duration": "15-30s"
+        },
+        {
+            "id": "com_3",
+            "name": "Indian family dynamics comedy",
+            "niche": "comedy",
+            "popularity_score": 87,
+            "weekly_growth": "+27% this week",
+            "format_type": "Reel",
+            "example_caption_style": "My mom when I do literally anything 💀",
+            "ideal_duration": "0-15s"
+        },
+        {
+            "id": "com_4",
+            "name": "Trending audio with twist",
+            "niche": "comedy",
+            "popularity_score": 83,
+            "weekly_growth": "+22% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Using this audio for every situation till it stops working 😂",
+            "ideal_duration": "0-15s"
+        },
+        {
+            "id": "com_5",
+            "name": "Expectation vs reality",
+            "niche": "comedy",
+            "popularity_score": 80,
+            "weekly_growth": "+18% this week",
+            "format_type": "Reel",
+            "example_caption_style": "What I thought __ would be vs what it actually is 😭",
+            "ideal_duration": "15-30s"
+        },
+        {
+            "id": "com_6",
+            "name": "React to comments",
+            "niche": "comedy",
+            "popularity_score": 76,
+            "weekly_growth": "+14% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Reading your comments about my last post and I can't 😭😭",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "com_7",
+            "name": "Day in the life parody",
+            "niche": "comedy",
+            "popularity_score": 73,
+            "weekly_growth": "+11% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Day in the life of someone who has their life together (this is not that) 😂",
+            "ideal_duration": "60s+"
+        },
+        {
+            "id": "com_8",
+            "name": "Office / work humor",
+            "niche": "comedy",
+            "popularity_score": 69,
+            "weekly_growth": "+9% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Every Monday morning meeting ever 😭 Tag your colleague",
+            "ideal_duration": "0-15s"
+        },
+        {
+            "id": "com_9",
+            "name": "Types of people series",
+            "niche": "comedy",
+            "popularity_score": 66,
+            "weekly_growth": "+7% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Types of people in every __ — which one are you? 😂",
+            "ideal_duration": "15-30s"
+        },
+        {
+            "id": "com_10",
+            "name": "Comment challenges",
+            "niche": "comedy",
+            "popularity_score": 62,
+            "weekly_growth": "+4% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Comment __ and I'll reply with __ 😂 Go",
+            "ideal_duration": "0-15s"
+        }
+    ],
+    "tech": [
+        {
+            "id": "tech_1",
+            "name": "AI tool you didn't know existed",
+            "niche": "tech",
+            "popularity_score": 97,
+            "weekly_growth": "+45% this week",
+            "format_type": "Reel",
+            "example_caption_style": "This free AI tool just replaced 3 apps I was paying for 🤯 Save this!",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "tech_2",
+            "name": "Keyboard shortcut roundup",
+            "niche": "tech",
+            "popularity_score": 88,
+            "weekly_growth": "+29% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "15 keyboard shortcuts that make you look like a wizard 🧙‍♂️ → Swipe & save",
+            "ideal_duration": "N/A"
+        },
+        {
+            "id": "tech_3",
+            "name": "Tech stack explained simply",
+            "niche": "tech",
+            "popularity_score": 85,
+            "weekly_growth": "+24% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "How __ works, explained like you're 10 → Swipe to understand",
+            "ideal_duration": "N/A"
+        },
+        {
+            "id": "tech_4",
+            "name": "Setup tour / desk reveal",
+            "niche": "tech",
+            "popularity_score": 82,
+            "weekly_growth": "+21% this week",
+            "format_type": "Reel",
+            "example_caption_style": "My ₹50,000 developer setup tour 💻 Everything linked in bio",
+            "ideal_duration": "60s+"
+        },
+        {
+            "id": "tech_5",
+            "name": "Build in public / 30-day challenge",
+            "niche": "tech",
+            "popularity_score": 78,
+            "weekly_growth": "+17% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Day 1 of building __ in public. Wish me luck 🚀",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "tech_6",
+            "name": "Tech news breakdown",
+            "niche": "tech",
+            "popularity_score": 75,
+            "weekly_growth": "+14% this week",
+            "format_type": "Reel",
+            "example_caption_style": "What __ actually means for you — no jargon 👇",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "tech_7",
+            "name": "Career roadmap guide",
+            "niche": "tech",
+            "popularity_score": 72,
+            "weekly_growth": "+11% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "How to become a __ in 2025 with zero experience → Swipe for the roadmap",
+            "ideal_duration": "N/A"
+        },
+        {
+            "id": "tech_8",
+            "name": "Code roast / debug live",
+            "niche": "tech",
+            "popularity_score": 68,
+            "weekly_growth": "+8% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Someone sent me this code and I need a moment 💀",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "tech_9",
+            "name": "Free vs paid tool comparison",
+            "niche": "tech",
+            "popularity_score": 64,
+            "weekly_growth": "+6% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "Stop paying for these. Free alternatives that are actually better → Swipe",
+            "ideal_duration": "N/A"
+        },
+        {
+            "id": "tech_10",
+            "name": "Terminal/IDE theme reveal",
+            "niche": "tech",
+            "popularity_score": 60,
+            "weekly_growth": "+3% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Changing my theme and suddenly I'm 10x more productive (not really but kind of) 😅",
+            "ideal_duration": "0-15s"
+        }
+    ],
+    "fashion": [
+        {
+            "id": "fash_1",
+            "name": "Outfit of the day GRWM",
+            "niche": "fashion",
+            "popularity_score": 92,
+            "weekly_growth": "+35% this week",
+            "format_type": "Reel",
+            "example_caption_style": "GRWM for __ — outfit details in the caption 🧥",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "fash_2",
+            "name": "Thrift flip transformation",
+            "niche": "fashion",
+            "popularity_score": 89,
+            "weekly_growth": "+30% this week",
+            "format_type": "Reel",
+            "example_caption_style": "₹200 thrift find → high-fashion look. Transformation in 30 seconds ✂️",
+            "ideal_duration": "30-60s"
+        },
+        {
+            "id": "fash_3",
+            "name": "One item 5 ways",
+            "niche": "fashion",
+            "popularity_score": 85,
+            "weekly_growth": "+24% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "5 different ways to style this one piece → Swipe and save 👗",
+            "ideal_duration": "N/A"
+        },
+        {
+            "id": "fash_4",
+            "name": "Budget vs luxury dupe",
+            "niche": "fashion",
+            "popularity_score": 82,
+            "weekly_growth": "+21% this week",
+            "format_type": "Reel",
+            "example_caption_style": "₹500 vs ₹5000 — can you tell the difference? 🤔",
+            "ideal_duration": "15-30s"
+        },
+        {
+            "id": "fash_5",
+            "name": "Styling challenge by body type",
+            "niche": "fashion",
+            "popularity_score": 79,
+            "weekly_growth": "+18% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "What to wear for your body type that nobody actually tells you → Swipe",
+            "ideal_duration": "N/A"
+        },
+        {
+            "id": "fash_6",
+            "name": "Wardrobe essential capsule",
+            "niche": "fashion",
+            "popularity_score": 76,
+            "weekly_growth": "+15% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "10 pieces that create 30 outfits — the only capsule wardrobe you need → Save",
+            "ideal_duration": "N/A"
+        },
+        {
+            "id": "fash_7",
+            "name": "Fashion mistake fix",
+            "niche": "fashion",
+            "popularity_score": 72,
+            "weekly_growth": "+12% this week",
+            "format_type": "Reel",
+            "example_caption_style": "This one styling mistake is making your outfits look cheap. Here's the fix 🔑",
+            "ideal_duration": "15-30s"
+        },
+        {
+            "id": "fash_8",
+            "name": "Street style inspiration",
+            "niche": "fashion",
+            "popularity_score": 69,
+            "weekly_growth": "+9% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Street style from __ that has me rethinking my whole wardrobe 🌆",
+            "ideal_duration": "15-30s"
+        },
+        {
+            "id": "fash_9",
+            "name": "Sustainable fashion tips",
+            "niche": "fashion",
+            "popularity_score": 65,
+            "weekly_growth": "+6% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "How I transitioned to sustainable fashion without spending more → Swipe",
+            "ideal_duration": "N/A"
+        },
+        {
+            "id": "fash_10",
+            "name": "Get the look for less",
+            "niche": "fashion",
+            "popularity_score": 62,
+            "weekly_growth": "+4% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "Celebrity outfit → recreated for ₹1500. How I did it → Swipe",
+            "ideal_duration": "N/A"
+        }
+    ],
+    "bharat_regional": [
+        {
+            "id": "bh_1",
+            "name": "Regional festival content creation",
+            "niche": "bharat_regional",
+            "popularity_score": 96,
+            "weekly_growth": "+44% this week",
+            "format_type": "Reel",
+            "example_caption_style": "__ का त्योहार आ गया! 🎉 इस तरह से मनाएं और viral हो जाएं",
+            "ideal_duration": "30-60s",
+            "is_bharat": true
+        },
+        {
+            "id": "bh_2",
+            "name": "Bhajan / devotional reels",
+            "niche": "bharat_regional",
+            "popularity_score": 91,
+            "weekly_growth": "+36% this week",
+            "format_type": "Reel",
+            "example_caption_style": "आज का भजन — दिल को छू जाएगा 🙏 Share करें अपने परिवार के साथ",
+            "ideal_duration": "30-60s",
+            "is_bharat": true
+        },
+        {
+            "id": "bh_3",
+            "name": "Desi jugaad / life hack",
+            "niche": "bharat_regional",
+            "popularity_score": 88,
+            "weekly_growth": "+29% this week",
+            "format_type": "Reel",
+            "example_caption_style": "ये jugaad देखकर आप हंसेंगे भी और save भी करेंगे 😂",
+            "ideal_duration": "15-30s",
+            "is_bharat": true
+        },
+        {
+            "id": "bh_4",
+            "name": "Regional language comedy",
+            "niche": "bharat_regional",
+            "popularity_score": 85,
+            "weekly_growth": "+24% this week",
+            "format_type": "Reel",
+            "example_caption_style": "हर घर में यही होता है 😂 Tag करो उसे जो ऐसा करता है",
+            "ideal_duration": "0-15s",
+            "is_bharat": true
+        },
+        {
+            "id": "bh_5",
+            "name": "Traditional recipe in modern style",
+            "niche": "bharat_regional",
+            "popularity_score": 82,
+            "weekly_growth": "+21% this week",
+            "format_type": "Reel",
+            "example_caption_style": "दादी की recipe — modern twist के साथ 🍛 Save करना मत भूलें!",
+            "ideal_duration": "60s+",
+            "is_bharat": true
+        },
+        {
+            "id": "bh_6",
+            "name": "Inspirational story in regional language",
+            "niche": "bharat_regional",
+            "popularity_score": 79,
+            "weekly_growth": "+18% this week",
+            "format_type": "Reel",
+            "example_caption_style": "एक छोटे गाँव से निकलकर कैसे बदली ज़िंदगी 🌟 My story",
+            "ideal_duration": "60s+",
+            "is_bharat": true
+        },
+        {
+            "id": "bh_7",
+            "name": "Cricket / sports reaction",
+            "niche": "bharat_regional",
+            "popularity_score": 76,
+            "weekly_growth": "+15% this week",
+            "format_type": "Reel",
+            "example_caption_style": "वो moment जब India ने जीता 🏆 दिल जीत लिया!",
+            "ideal_duration": "15-30s",
+            "is_bharat": true
+        },
+        {
+            "id": "bh_8",
+            "name": "Local artisan / craft spotlight",
+            "niche": "bharat_regional",
+            "popularity_score": 72,
+            "weekly_growth": "+12% this week",
+            "format_type": "Reel",
+            "example_caption_style": "इन हाथों ने बनाया है ये masterpiece — support local artisans 🤲",
+            "ideal_duration": "30-60s",
+            "is_bharat": true
+        },
+        {
+            "id": "bh_9",
+            "name": "Bollywood trend + regional twist",
+            "niche": "bharat_regional",
+            "popularity_score": 69,
+            "weekly_growth": "+9% this week",
+            "format_type": "Reel",
+            "example_caption_style": "Bollywood का यह trend ab apni bhasha mein 😄",
+            "ideal_duration": "15-30s",
+            "is_bharat": true
+        },
+        {
+            "id": "bh_10",
+            "name": "Village to city transformation story",
+            "niche": "bharat_regional",
+            "popularity_score": 65,
+            "weekly_growth": "+7% this week",
+            "format_type": "Carousel",
+            "example_caption_style": "गाँव छोड़कर शहर आया — journey जो आपको inspire करेगी → Swipe करें",
+            "ideal_duration": "N/A",
+            "is_bharat": true
+        }
+    ]
+}
