@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import {
-    detectNicheWithGroq,
-    buildCreatorDNAWithGroq,
-    generateSuggestionsWithGroq
-} from '@/lib/groq';
+    detectNicheWithGemini,
+    buildCreatorDNAWithGemini,
+    generateSuggestionsWithGemini
+} from '@/lib/gemini';
 import { buildLocalDNA } from '@/lib/dna-engine';
 import { CreatorProfile, CreatorDNA, Post } from '@/types';
 
@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
             return NextResponse.json({ error: 'APIFY_TOKEN missing' }, { status: 500 });
         }
 
-        console.log(`[Groq AI] Starting analysis for @${username}...`);
+        console.log(`[Gemini AI] Starting analysis for @${username}...`);
 
         // Step 1: Fetch via Apify
         const apifyUrl = `https://api.apify.com/v2/acts/apify~instagram-profile-scraper/run-sync-get-dataset-items?token=${process.env.APIFY_TOKEN}`;
@@ -85,19 +85,19 @@ export async function POST(request: NextRequest) {
         };
 
         // Step 2: Niche Detection
-        const nicheData = await detectNicheWithGroq(posts);
+        const nicheData = await detectNicheWithGemini(posts);
         profile.niche = nicheData.detected_niche as any;
 
         // Step 3: Local DNA Engine (for stats)
         const localDNA = buildLocalDNA(profile);
 
-        // Step 4: Groq AI DNA Building
+        // Step 4: Gemini AI DNA Building
         let finalDNA: CreatorDNA;
-        if (process.env.GROQ_API_KEY) {
-            const groqDNA = await buildCreatorDNAWithGroq(profile, localDNA, nicheData);
+        if (process.env.GEMINI_API_KEY) {
+            const geminiDNA = await buildCreatorDNAWithGemini(profile, localDNA, nicheData);
             finalDNA = {
                 ...localDNA,
-                ...groqDNA,
+                ...geminiDNA,
                 detected_niche: nicheData.detected_niche,
                 confidence: nicheData.confidence,
                 ideal_duration: localDNA.ideal_duration!,
@@ -108,11 +108,11 @@ export async function POST(request: NextRequest) {
                 best_post_type: localDNA.best_post_type!,
             } as CreatorDNA;
         } else {
-            throw new Error('GROQ_API_KEY missing');
+            throw new Error('GEMINI_API_KEY missing');
         }
 
-        // Step 5: Suggestions via Groq (Niche-locked)
-        const suggestions = await generateSuggestionsWithGroq(profile, finalDNA, nicheData);
+        // Step 5: Suggestions via Gemini (Niche-locked)
+        const suggestions = await generateSuggestionsWithGemini(profile, finalDNA, nicheData);
 
         clearTimeout(timeoutId);
         return NextResponse.json({ profile, dna: finalDNA, suggestions });

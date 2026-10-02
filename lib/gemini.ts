@@ -1,34 +1,36 @@
-// ─────────────────────────────────────────────────────────────────────────────
-// Groq AI wrapper for CreatorBrain
-// Using Llama 3.3 70B for high-performance content analysis.
-// ─────────────────────────────────────────────────────────────────────────────
-
-import Groq from 'groq-sdk';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 import { CreatorProfile, CreatorDNA, Suggestion, NicheType, Trend, Post } from '@/types';
 
+// Initialize Gemini
+const apiKey = process.env.GEMINI_API_KEY;
+const genAI = apiKey ? new GoogleGenerativeAI(apiKey) : null;
+
 async function analyzeWithAI(systemPrompt: string, userPrompt: string): Promise<string> {
-    const apiKey = process.env.GROQ_API_KEY;
-    if (!apiKey) throw new Error('GROQ_API_KEY not configured');
+    if (!genAI) throw new Error('GEMINI_API_KEY not configured');
 
-    const groq = new Groq({ apiKey });
-
-    const completion = await groq.chat.completions.create({
-        messages: [
-            { role: 'system', content: systemPrompt },
-            { role: 'user', content: userPrompt }
-        ],
-        model: 'llama-3.3-70b-versatile',
-        temperature: 0.7,
-        max_tokens: 2048,
-        response_format: { type: "json_object" }
+    const model = genAI.getGenerativeModel({
+        model: 'gemini-1.5-flash',
+        generationConfig: {
+            temperature: 0.7,
+            maxOutputTokens: 2048,
+            responseMimeType: "application/json"
+        },
+        systemInstruction: systemPrompt,
     });
 
-    return completion.choices[0].message.content || '';
+    try {
+        const result = await model.generateContent(userPrompt);
+        const response = result.response;
+        return response.text();
+    } catch (error: any) {
+        console.error("Gemini API Error:", error);
+        throw new Error(`Gemini API failed: ${error.message}`);
+    }
 }
 
-// ─── Step 1: Detect Exact Niche via Groq ───────────────────────────────────
+// ─── Step 1: Detect Exact Niche ───────────────────────────────────
 
-export async function detectNicheWithGroq(posts: Post[]): Promise<{
+export async function detectNicheWithGemini(posts: Post[]): Promise<{
     detected_niche: string;
     confidence: number;
     evidence: string[];
@@ -78,8 +80,7 @@ Do not mix niches unless content is genuinely mixed.
   "archetype": "The [relevant title for this niche]",
   "top_content_themes": ["theme1", "theme2", "theme3"],
   "avoid_suggesting": ["unrelated niche1", "unrelated niche2"]
-}
-`;
+}`;
 
     const userPrompt = `Determine niche and archetype for this creator based on captions and engagement.`;
 
@@ -87,9 +88,9 @@ Do not mix niches unless content is genuinely mixed.
     return JSON.parse(raw);
 }
 
-// ─── Step 2: Build Creator DNA via Groq ─────────────────────────────────────
+// ─── Step 2: Build Creator DNA ─────────────────────────────────────
 
-export async function buildCreatorDNAWithGroq(
+export async function buildCreatorDNAWithGemini(
     profile: CreatorProfile,
     localAnalysis: Partial<CreatorDNA>,
     nicheData: any
@@ -116,9 +117,9 @@ Content Evidence: ${nicheData.evidence.join(', ')}`;
     return JSON.parse(raw);
 }
 
-// ─── Step 3: Generate Smart Suggestions via Groq ────────────────────────────
+// ─── Step 3: Generate Smart Suggestions ────────────────────────────
 
-export async function generateSuggestionsWithGroq(
+export async function generateSuggestionsWithGemini(
     profile: CreatorProfile,
     dna: CreatorDNA,
     nicheData: any
