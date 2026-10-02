@@ -12,7 +12,7 @@ export const maxDuration = 60;
 
 export async function POST(request: NextRequest) {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 55000); // 55s timeout
+    const timeoutId = setTimeout(() => controller.abort(), 55000); // 55s safety cutoff
 
     try {
         const body = await request.json();
@@ -67,7 +67,7 @@ export async function POST(request: NextRequest) {
             is_video: post.type === 'Video',
             hashtags: post.hashtags || [],
             duration: post.videoDuration || null,
-            thumbnail: post.displayUrl // Keep in type, but will hide in UI
+            thumbnail: post.displayUrl
         }));
 
         const profile: CreatorProfile = {
@@ -91,10 +91,14 @@ export async function POST(request: NextRequest) {
         // Step 3: Local DNA Engine (for stats)
         const localDNA = buildLocalDNA(profile);
 
-        // Step 4: Gemini AI DNA Building
+        // Step 4 & 5: Parallel Gemini AI Executions for DNA building and Smart Suggestions
         let finalDNA: CreatorDNA;
         if (process.env.GEMINI_API_KEY) {
-            const geminiDNA = await buildCreatorDNAWithGemini(profile, localDNA, nicheData);
+            const [geminiDNA, suggestions] = await Promise.all([
+                buildCreatorDNAWithGemini(profile, localDNA, nicheData),
+                generateSuggestionsWithGemini(profile, localDNA as CreatorDNA, nicheData)
+            ]);
+
             finalDNA = {
                 ...localDNA,
                 ...geminiDNA,
@@ -107,15 +111,12 @@ export async function POST(request: NextRequest) {
                 consistency_score: localDNA.consistency_score!,
                 best_post_type: localDNA.best_post_type!,
             } as CreatorDNA;
+
+            clearTimeout(timeoutId);
+            return NextResponse.json({ profile, dna: finalDNA, suggestions });
         } else {
             throw new Error('GEMINI_API_KEY missing');
         }
-
-        // Step 5: Suggestions via Gemini (Niche-locked)
-        const suggestions = await generateSuggestionsWithGemini(profile, finalDNA, nicheData);
-
-        clearTimeout(timeoutId);
-        return NextResponse.json({ profile, dna: finalDNA, suggestions });
 
     } catch (error: any) {
         clearTimeout(timeoutId);

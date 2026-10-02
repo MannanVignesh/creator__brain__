@@ -5,14 +5,29 @@ import { CreatorProfile, CreatorDNA, Suggestion, NicheType, Trend, Post } from '
 const apiKey = process.env.GEMINI_API_KEY;
 const genAI = apiKey ? new GoogleGenerativeAI(apiKey) : null;
 
-// Supported Gemini Models (Primary + Fallbacks)
+// Supported Gemini Models (Primary + Fast Fallbacks)
 const CANDIDATE_MODELS = [
     'gemini-3.7-flash',
     'gemini-3.5-flash',
     'gemini-3.5-flash-lite',
-    'gemini-2.5-flash',
-    'gemini-flash-latest'
+    'gemini-2.5-flash'
 ];
+
+// Per-request hard timeout helper (7 seconds)
+function timeoutPromise<T>(promise: Promise<T>, ms: number, errorMessage: string): Promise<T> {
+    return new Promise<T>((resolve, reject) => {
+        const timer = setTimeout(() => reject(new Error(errorMessage)), ms);
+        promise
+            .then((res) => {
+                clearTimeout(timer);
+                resolve(res);
+            })
+            .catch((err) => {
+                clearTimeout(timer);
+                reject(err);
+            });
+    });
+}
 
 async function analyzeWithAI(systemPrompt: string, userPrompt: string): Promise<string> {
     if (!genAI) throw new Error('GEMINI_API_KEY not configured');
@@ -30,9 +45,14 @@ async function analyzeWithAI(systemPrompt: string, userPrompt: string): Promise<
             systemInstruction: systemPrompt,
         });
 
+        // Bounded retries: 1 attempt + 1 quick retry for transient errors
         for (let attempt = 0; attempt < 2; attempt++) {
             try {
-                const result = await model.generateContent(userPrompt);
+                const result = await timeoutPromise(
+                    model.generateContent(userPrompt),
+                    7000, // 7-second strict timeout per request
+                    `Gemini API timeout on ${modelName}`
+                );
                 const response = result.response;
                 return response.text();
             } catch (error: any) {
@@ -43,11 +63,12 @@ async function analyzeWithAI(systemPrompt: string, userPrompt: string): Promise<
                                     errMessage.includes('500') ||
                                     errMessage.includes('high demand') ||
                                     errMessage.includes('Service Unavailable') ||
-                                    errMessage.includes('ResourceExhausted');
+                                    errMessage.includes('ResourceExhausted') ||
+                                    errMessage.includes('timeout');
 
                 if (isTransient && attempt === 0) {
-                    console.warn(`[Gemini AI] Model ${modelName} transient error (attempt ${attempt + 1}), retrying in 500ms...`);
-                    await new Promise(res => setTimeout(res, 500));
+                    console.warn(`[Gemini AI] Model ${modelName} transient issue (attempt ${attempt + 1}), quick retry in 300ms...`);
+                    await new Promise(res => setTimeout(res, 300));
                     continue;
                 }
 
