@@ -5,27 +5,60 @@ import { CreatorProfile, CreatorDNA, Suggestion, NicheType, Trend, Post } from '
 const apiKey = process.env.GEMINI_API_KEY;
 const genAI = apiKey ? new GoogleGenerativeAI(apiKey) : null;
 
+// Supported Gemini Models (Primary + Fallbacks)
+const CANDIDATE_MODELS = [
+    'gemini-3.7-flash',
+    'gemini-3.5-flash',
+    'gemini-3.5-flash-lite',
+    'gemini-2.5-flash',
+    'gemini-flash-latest'
+];
+
 async function analyzeWithAI(systemPrompt: string, userPrompt: string): Promise<string> {
     if (!genAI) throw new Error('GEMINI_API_KEY not configured');
 
-    const model = genAI.getGenerativeModel({
-        model: 'gemini-3.8-flash',
-        generationConfig: {
-            temperature: 0.7,
-            maxOutputTokens: 2048,
-            responseMimeType: "application/json"
-        },
-        systemInstruction: systemPrompt,
-    });
+    let lastError: Error | null = null;
 
-    try {
-        const result = await model.generateContent(userPrompt);
-        const response = result.response;
-        return response.text();
-    } catch (error: any) {
-        console.error("Gemini API Error:", error);
-        throw new Error(`Gemini API failed: ${error.message}`);
+    for (const modelName of CANDIDATE_MODELS) {
+        const model = genAI.getGenerativeModel({
+            model: modelName,
+            generationConfig: {
+                temperature: 0.7,
+                maxOutputTokens: 2048,
+                responseMimeType: "application/json"
+            },
+            systemInstruction: systemPrompt,
+        });
+
+        for (let attempt = 0; attempt < 2; attempt++) {
+            try {
+                const result = await model.generateContent(userPrompt);
+                const response = result.response;
+                return response.text();
+            } catch (error: any) {
+                lastError = error;
+                const errMessage = String(error?.message || error);
+                const isTransient = errMessage.includes('503') ||
+                                    errMessage.includes('429') ||
+                                    errMessage.includes('500') ||
+                                    errMessage.includes('high demand') ||
+                                    errMessage.includes('Service Unavailable') ||
+                                    errMessage.includes('ResourceExhausted');
+
+                if (isTransient && attempt === 0) {
+                    console.warn(`[Gemini AI] Model ${modelName} transient error (attempt ${attempt + 1}), retrying in 500ms...`);
+                    await new Promise(res => setTimeout(res, 500));
+                    continue;
+                }
+
+                console.warn(`[Gemini AI] Model ${modelName} failed on attempt ${attempt + 1}: ${errMessage}. Trying fallback model...`);
+                break;
+            }
+        }
     }
+
+    console.error("All Gemini API models failed:", lastError);
+    throw new Error(`Gemini API failed on all models: ${lastError?.message || 'Unknown error'}`);
 }
 
 // ─── Step 1: Detect Exact Niche ───────────────────────────────────
