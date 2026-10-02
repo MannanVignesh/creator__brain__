@@ -9,7 +9,7 @@ async function analyzeWithAI(systemPrompt: string, userPrompt: string): Promise<
     if (!genAI) throw new Error('GEMINI_API_KEY not configured');
 
     const model = genAI.getGenerativeModel({
-        model: 'gemini-1.5-flash',
+        model: 'gemini-3.8-flash',
         generationConfig: {
             temperature: 0.7,
             maxOutputTokens: 2048,
